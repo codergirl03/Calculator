@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    .container{
+        margin-top: 40px;
+        .row{
+            .col-md-6{
+                margin: auto;
+                .card{
+                    border-radius: 20px;
+                    padding: 8px;
+                    background-color: rgb(41, 34, 34);
+                    box-shadow: 1px 1px 10px 1px rgb(182, 169, 169);
+                    .card-header{
+                        padding: 20px 15px 20px 15px;
+                        .output{
+                        box-shadow: 1px 1px 5px 1px  rgb(182, 169, 169);
+                        .current-operand{
+                            width: 100%;
+                            height: 50px;
+                            border: none;
+                            padding-right: 10px;
+                            text-align: right;
+                            color: white;
+                            font-size: 1.5rem;
+                            background-color: black; 
+                        }
+                        .previous-operand{
+                            width: 100%;
+                            height: 50px;
+                            border: none;
+                            padding-top: 10px;
+                            padding-right: 15px; 
+                            text-align: right;
+                            color: rgb(204, 187, 187);
+                            font-size: 1.2rem;
+                            background-color: black;  
+                        }
+                    }
+                    }
+                    .card-body{
+                        .row{
+                            padding: 1px;
+                            #clearElements{
+                                width: 41%;
+                            }
+                            .btn{
+                                color: rgb(253, 71, 132);
+                                background-color: rgb(15, 15, 15);
+                                width: 18%;
+                                border-radius: 10px;
+                                line-height: 3;
+                                font-size: 15px;
+                                font-weight: 900;
+                                border: 1px solid black ;
+                                box-shadow: 1px 1px 5px 1px rgb(173, 159, 159); 
+                                &:hover{
+                                    background-color: rgba(255, 255, 255, 0.925);
+                                    border: none;
+                                }
+                            }
+                            #solve{
+                                width: 41%;
+                                background-color: rgb(253, 71, 132);
+                                color: black;
+                                border: 1px solid  rgb(253, 71, 132);
+                                box-shadow: 1px 1px 5px 1px  rgb(182, 169, 169); 
+                                &:hover{
+                                    background-color: rgb(255, 255, 255);
+                                    border: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

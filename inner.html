@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+    <title>Calculator</title>
+</head>
+<body> 
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-lg-4 col-md-6 col-sm-8 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="output">
+                        <div class="previous-operand" data-previous-operand></div>
+                       <div class="current-operand" data-current-operand></div>
+                       </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-2">
+                            <button type="button" class="btn ml-3" id="clearElements" data-all-clear >C</button>
+                            <button type="button" class="btn ml-3" data-delete><i class="fas fa-backspace"></i></button>
+                            <button type="button" class="btn ml-3" data-operation>/</button>
+                        </div>
+                        <div class="row  mb-2">
+                            <button type="button" class="btn ml-3" data-number>7</button>
+                            <button type="button" class="btn ml-3" data-number>8</button>
+                            <button type="button" class="btn ml-3" data-number>9</button>
+                            <button type="button" class="btn ml-3" data-operation>*</button>
+                        </div>
+                        <div class="row  mb-2">
+                            <button type="button" class="btn ml-3" data-number >4</button>
+                            <button type="button" class="btn ml-3" data-number >5</button>
+                            <button type="button" class="btn ml-3" data-number>6</button>
+                            <button type="button" class="btn ml-3" data-operation >-</button>
+                        </div>
+                        <div class="row  mb-2">
+                            <button type="button" class="btn ml-3" data-number>1</button>
+                            <button type="button" class="btn ml-3" data-number>2</button>
+                            <button type="button" class="btn ml-3" data-number>3</button>
+                            <button type="button" class="btn ml-3" data-operation>+</button>
+                        </div>
+                        <div class="row  mb-2">
+                            <button type="button" class="btn ml-3" data-number>0</button>
+                            <button type="button" class="btn ml-3" data-number>.</button>
+                            <button type="button" class="btn ml-3" data-equals id="solve">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/main.js" defer></script>
+</html>
